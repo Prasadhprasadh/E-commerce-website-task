@@ -1,0 +1,18 @@
+<p>product-list works!</p>
+
+
+
+  
+  <div class="product-list">
+    <div class="product-card" *ngFor="let product of products">
+      <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+      <h3>{{ product.name }}</h3>
+      <p>Price: ${{ product.price }}</p>
+      <a [routerLink]="['/product', product.id]">View Details</a>
+      <br><br>
+      <button routerLink="/checkout">Buy it</button>
+    </div>
+
+  </div>
+
+  

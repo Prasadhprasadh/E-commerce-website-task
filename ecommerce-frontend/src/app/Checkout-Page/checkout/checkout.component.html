@@ -1,0 +1,19 @@
+<p>checkout works!</p>
+
+<div>
+    <h2>Checkout</h2>
+    <form (ngSubmit)="submitOrder()">
+      <label for="userName">Name</label>
+      <input id="userName" [(ngModel)]="checkout.userName" name="userName" required>
+  
+      <label for="address">Address</label>
+      <input id="address" [(ngModel)]="checkout.address" name="address" required>
+  
+      <label for="quantity">Quantity</label>
+      <input id="quantity" [(ngModel)]="checkout.quantity" name="quantity" required>
+  
+      <button routerLink="/payment-status">Place Order </button>
+    </form>
+    <p>{{ message }}</p>
+  </div>
+  

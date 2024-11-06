@@ -1,0 +1,11 @@
+<p>product-detail works!</p>
+
+<div *ngIf="product1">
+    <h2>{{ product1.name }}</h2>
+    <img [src]="product1.imageurl" alt="{{ product1.name }}" width="200">
+    <p>{{ product1.description }}</p>
+    <p><strong>${{ product1.price }}</strong></p>
+    <p>{{product1.stock}}</p>
+  </div>
+  <h1>hello</h1>
+  <h1>{{product1.name}}</h1>
